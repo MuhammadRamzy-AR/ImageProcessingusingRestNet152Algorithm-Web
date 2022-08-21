@@ -1,0 +1,15 @@
+.container {
+  @apply w-full h-48 absolute flex-col justify-center flex items-center z-10;
+}
+
+.wrapper_text {
+  @apply w-full h-10   justify-center flex items-center gap-16  z-10 pt-5;
+}
+
+.text {
+  @apply text-hitam font-medium text-base tracking-wider z-10 hover:text-black hover:font-semibold;
+}
+
+.gambar {
+  @apply justify-center flex items-center;
+}

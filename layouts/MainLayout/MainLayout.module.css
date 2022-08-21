@@ -1,0 +1,7 @@
+/* .container {
+  @apply w-full h-auto relative bg-[#918A82] overflow-hidden;
+} */
+
+.container {
+  @apply w-full h-auto relative bg-[#CCC9C0] overflow-hidden;
+}

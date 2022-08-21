@@ -1,0 +1,13 @@
+.container {
+  @apply w-full relative  h-[720px];
+}
+.wrapper_gambar {
+  @apply w-full opacity-50  h-[720px];
+}
+
+.text {
+  @apply font-semibold text-hitam text-[30px] pb-5 z-10 text-center w-[900px];
+}
+.button {
+  @apply flex flex-col justify-center items-center  h-[720px] pt-40;
+}

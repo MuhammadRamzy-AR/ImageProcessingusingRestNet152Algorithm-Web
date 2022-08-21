@@ -1,0 +1,15 @@
+.overlay {
+  @apply bg-black/50 inset-0 z-50  fixed flex items-center justify-center p-16 md:p-0;
+}
+
+.modal {
+  @apply w-[550px] h-auto bg-[#918A82] rounded-2xl;
+}
+
+.header {
+  @apply font-semibold text-xl text-hitam px-10 pt-6 text-right  justify-between;
+}
+
+.body {
+  @apply pt-4 pb-6 px-10 font-normal text-sm tracking-wider text-white text-justify;
+}
