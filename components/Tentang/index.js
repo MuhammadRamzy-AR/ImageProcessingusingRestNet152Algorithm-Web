@@ -25,7 +25,7 @@ const Tentang = () => {
       </div>
       <div className="flex flex-col pt-[73px]">
         {/* kolom pertama */}
-        <div className="flex flex-row mb-[32px] px-[127px] gap-[52px]">
+        <div className="flex flex-row mb-[32px] px-[127px] gap-[52px] justify-center">
           {/* Sumber dataset */}
           <div className="border border-garis/60 rounded-tl-[50px] gap-[20px] px-[30px] flex flex-row rounded-br-[50px] w-[567px] h-40 justify-center items-center">
             <div className=" flex-col w-[130px] text-sm  gap-1 items-center justify-center flex">
@@ -66,13 +66,13 @@ const Tentang = () => {
             <span className="text-sm text-hitam font-medium text-justify w-[356px]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
               pretium id eget in in scelerisque at etiam. Ullamcorper neque
-              proin placerat elementum aenean purus euismod cursus ornare..
+              proin placerat elementum aenean purus euismod cursus ornare.
             </span>
           </div>
         </div>
 
         {/* kolom kedua */}
-        <div className="flex flex-row  mb-[109px] px-[127px] gap-[52px]">
+        <div className="flex flex-row  mb-[109px] px-[127px] gap-[52px] justify-center">
           {/* Model Arsitektur */}
           <div className="border border-garis/60 rounded-bl-[50px] gap-[20px] px-[30px] flex flex-row rounded-tr-[50px] w-[567px] h-40 justify-center items-center">
             <div className=" flex-col w-[130px] text-sm  gap-1 items-center justify-center flex">

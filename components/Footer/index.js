@@ -21,7 +21,7 @@ const Footer = () => {
           kelulusan dari Program Studi Informatika Itenas.
         </div>
 
-        <div className=" flex flex-col gap-[13px]">
+        <div className="pl-[250px] flex flex-col gap-[13px]">
           <div className="flex flex-row h-[24px] 2-[24px] borde-2 gap-[11px]">
             <Image
               src="/assets/Profile.png"
@@ -29,7 +29,7 @@ const Footer = () => {
               width="24px"
               height="24px"
             />
-            <span className="text-[##262626] font-normal text-sm">
+            <span className="py-[2px] text-[#262626] font-normal text-sm">
               Hazkia Kaikiba 15-2018-082
             </span>
           </div>
@@ -40,7 +40,7 @@ const Footer = () => {
               width="24px"
               height="24px"
             />
-            <span className="text-[##262626] font-normal text-sm">
+            <span className="py-[2px] text-[#262626] font-normal text-sm">
               hazkiak@mhs.itenas.ac.id
             </span>
           </div>
@@ -51,7 +51,7 @@ const Footer = () => {
               width="24px"
               height="24px"
             />
-            <span className="text-[##262626] font-normal text-sm">
+            <span className="py-[2px] text-[#262626] font-normal text-sm">
               0896‑6972‑9069
             </span>
           </div>

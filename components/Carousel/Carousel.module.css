@@ -1,8 +1,8 @@
 .container {
-  @apply w-full relative  h-[720px];
+  @apply w-full relative  h-[830px];
 }
 .wrapper_gambar {
-  @apply w-full opacity-50  h-[720px];
+  @apply w-full opacity-50  h-[830px];
 }
 
 .text {
