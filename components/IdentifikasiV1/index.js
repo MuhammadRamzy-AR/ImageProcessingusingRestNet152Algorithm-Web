@@ -4,12 +4,13 @@ import { ReactDOM } from "react-dom";
 import Image from "next/image";
 import Button from "../Button";
 import Modal from "../Modal";
-import { InputGambar } from "../InputGambar";
+import { InputGambarV1 } from "../InputGambar";
 
-const Penyakit = () => {
+const IdentifikasiV1 = () => {
   const [showModal, setShowModal] = useState(false);
+
   return (
-    <div className=" w-full " id="sectionidentifikasi">
+    <div className=" w-full " id="sectionidentifikasiv1">
       <div className="pt-28">
         <fieldset className="border-t border-[#918A82]">
           <legend className="mx-auto font-semibold text-[#262626] text-3xl ">
@@ -22,13 +23,13 @@ const Penyakit = () => {
             </span>
             <span className=" text-hitam font-normal">
               {" "}
-              penyakit Covid-19 ataupun tidak.
+              penyakit Covid-19 ataupun tidak Menggunakan Model Resnet 152 versi 1.
             </span>
           </div>
         </fieldset>
-        <div className="flex flex-row w-full gap-3 justify-center pt-12">
+        <div className="flex flex-row w-full gap-3 justify-center">
           <button
-            className=" pt-1"
+            className="h-[270px]"
             type="button"
             onClick={() => setShowModal(true)}
           >
@@ -43,14 +44,14 @@ const Penyakit = () => {
             <Modal onclose={() => setShowModal(false)}></Modal>
           ) : null}
 
-          <InputGambar />
-        </div>
-        <div className="flex justify-center pt-5">
-          <Button variant="auth">Identifikasi</Button>
+          {/* section input gambar */}
+          <div className="flex justify-center pt-12">
+          <InputGambarV1 />
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Penyakit;
+export default IdentifikasiV1;

@@ -5,7 +5,7 @@ import Button from "../Button";
 import Image from "next/image";
 import Modal from "../Modal";
 
-export const InputGambarV1 = () => {
+export const InputGambarV2 = () => {
 
   const [showModal, setShowModal] = useState(false);
   let [prediction, setPrediction] = useState([])
@@ -15,7 +15,7 @@ export const InputGambarV1 = () => {
     const formData = new FormData(e.target);
 
     const Upload = async() => {
-      await fetch('http://localhost:5000/resnetv1', {
+      await fetch('http://localhost:5000/resnetv2', {
         method: 'POST',
         body: formData
       }).then(resp => {
@@ -26,14 +26,11 @@ export const InputGambarV1 = () => {
       })
     }
     Upload();
-
-    // let result_string = document.getElementById('result_status');
-    // result_string.innerHTML = result_status;
   }
 
 
   return (
-    <div className="z-10">
+  <div className="z-10">
     <form onSubmit={handleSubmit} className="container mt-5 pt-5 pb-5" encType="multipart/form-data">
       <div className="form-inline justify-content-center mt-5">
         <div className=" border-2 rounded-3xl border-hitam w-[700px]  h-[48px]">
@@ -62,29 +59,26 @@ export const InputGambarV1 = () => {
         </div>
       </div>
 
-  </form>
-  {/* Menampilkan output prediction/classification */}
-  <div className="border border-garis/60 rounded-br-[50px] gap-[20px] px-[30px] rounded-bl-[50px] gap-[50px] px-[30px] flex flex-row rounded-tl-[50px] w-[700px] rounded-tr-[50px] w-[700px] h-20 justify-center items-center mt-4">
-            <div className=" flex-col w-[130px] text-sm  gap-1 items-center justify-center flex">
-              <div className="w-[20px] h-[24px]  ">
-                <Image
-                  src="/assets/Dataset.png"
-                  alt="icon"
-                  width="24px"
-                  height="24px"
-                />
-              </div>
-              <span className="text-sm text-hitam font-medium">
-                Hasil Identifikasi ResNet 152 versi 1
-              </span>
-            </div>
-            <span className="text-sm text-hitam font-medium text-justify w-[356px]">
-                  {prediction && <h1 className="mx-auto font-semibold text-[#262626] text-1xl">{prediction.result}</h1>}
-            </span>
-          </div>
-  <div>
-  {/* {prediction && <h1>{prediction.result}</h1>} */}
+    </form>
+    {/* Menampilkan output prediction/classification */}
+    <div className="border border-garis/60 rounded-br-[50px] gap-[20px] px-[30px] rounded-bl-[50px] gap-[50px] px-[30px] flex flex-row rounded-tl-[50px] w-[700px] rounded-tr-[50px] w-[700px] h-20 justify-center items-center mt-4">
+      <div className=" flex-col w-[130px] text-sm  gap-1 items-center justify-center flex">
+        <div className="w-[20px] h-[24px]  ">
+          <Image
+            src="/assets/Dataset.png"
+            alt="icon"
+            width="24px"
+            height="24px"
+          />
+        </div>
+        <span className="text-sm text-hitam font-medium">
+          Hasil Identifikasi ResNet 152 versi 2
+        </span>
+      </div>
+      <span className="text-sm text-hitam font-medium text-justify w-[356px]">
+            {prediction && <h1 className="mx-auto font-semibold text-[#262626] text-1xl">{prediction.result}</h1>}
+      </span>
+    </div>
   </div>
-</div>
   );
 };

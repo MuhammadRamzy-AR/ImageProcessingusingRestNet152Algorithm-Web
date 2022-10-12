@@ -4,7 +4,7 @@ import Image from "next/image";
 import MainLayout from "../layouts/MainLayout";
 import Title from "../components/Title";
 import Carousel from "../components/Carousel";
-import { Footer, Modal, Navbar, Penyakit, Tentang } from "../components";
+import { Footer, Modal, Navbar, IdentifikasiV1, IdentifikasiV2, Tentang } from "../components";
 
 export default function Home() {
   return (
@@ -13,7 +13,8 @@ export default function Home() {
         <Title>Beranda</Title>
         <Navbar />
         <Carousel />
-        <Penyakit />
+        <IdentifikasiV1 />
+        <IdentifikasiV2 />
         <Tentang />
 
         <Footer />

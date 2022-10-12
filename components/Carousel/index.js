@@ -12,7 +12,7 @@ const Carousel = () => {
           IDENTIFIKASI PENYAKIT COVID-19 BERDASARKAN CITRA RONTGEN PARU-PARU
         </span>
         <Button variant="auth">
-          <a href="#sectionidentifikasi">Mulai</a>
+          <a href="#sectionidentifikasiv1">Mulai</a>
         </Button>
       </div>
       <div className={style.wrapper_gambar}>
