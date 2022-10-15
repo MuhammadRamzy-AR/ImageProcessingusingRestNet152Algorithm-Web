@@ -64,9 +64,9 @@ const Tentang = () => {
               </span>
             </div>
             <span className="text-sm text-hitam font-medium text-justify w-[356px]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
-              pretium id eget in in scelerisque at etiam. Ullamcorper neque
-              proin placerat elementum aenean purus euismod cursus ornare.
+              Pada model ResNet-152 versi 1 didapatkan nilai akurasi tertinggi sebesar 0.9986
+              dan validation accuracy tertinggi sebesar 0.9244. Sedangkan pada model ResNet-152 versi 2
+              didapatkan akurasi tertinggi sebesar 0.9967 dan validation accuracy tertinggi yaitu 0.9335
             </span>
           </div>
         </div>
@@ -89,9 +89,9 @@ const Tentang = () => {
               </span>
             </div>
             <span className="text-sm text-hitam font-medium text-justify w-[356px]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
-              pretium id eget in in scelerisque at etiam. Ullamcorper neque
-              proin placerat elementum aenean purus euismod cursus ornare.
+              ResNet-152 versi 1 dan ResNet-152 versi 2 disusun menggunakan library keras
+              dengan nilai input shape '(100, 100, 3)', pooling 'avg', weights 'imagenet',
+              classes '4', dan classifier activation 'softmax'
             </span>
           </div>
 
@@ -100,18 +100,20 @@ const Tentang = () => {
             <div className=" flex-col w-[130px] text-sm  gap-1 items-center justify-center flex">
               <div className="w-[24px] h-[24px]  ">
                 <Image
-                  src="/assets/Akurasi.png"
+                  src="/assets/Arsitektur.png"
                   alt="icon"
                   width="24px"
                   height="24px"
                 />
               </div>
               <span className="text-sm text-hitam font-medium">
-                masih kosong
+                Pengujian Model
               </span>
             </div>
             <span className="text-sm text-hitam font-medium text-justify w-[356px]">
-              masih kosonng
+              Masing-masing model dilatih dan diuji menggunakan 30 epoch dan 32 batch size pada prosesnya.
+              Masing-masing model ResNet-152 diberikan optimizer 'SGD'
+              dengan nilai learning rate sebesar '0.01' dan loss 'sparse_categorical_crossentropy'.
             </span>
           </div>
         </div>
