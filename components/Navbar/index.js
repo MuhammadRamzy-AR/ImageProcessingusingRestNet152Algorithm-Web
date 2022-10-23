@@ -15,7 +15,7 @@ export const Navbar = () => {
           <a href="#sectionberanda">Beranda</a>
         </button>
         <button className={style.text}>
-          <a href="#sectionidentifikasi">Identifikasi</a>
+          <a href="#sectionidentifikasiv1">Identifikasi</a>
         </button>
 
         <button className={style.text}>
